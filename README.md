@@ -44,6 +44,7 @@ myApp 5
 1. Изначально, до оптимизации таблицы, таблица создавалась запросом "CREATE TABLE users (name VARCHAR(50), birthdate date, sex VARCHAR(1));"
 
 4. Имена и фамилии берутся из .txt файлов: LastNames.txt, MaleNames.txt, FemNames.txt.
+   
 5. 
    <image src="Screenshot_26.png" alt="Время выполенения">
 
