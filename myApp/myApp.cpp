@@ -160,5 +160,5 @@ int main()
     default:
         break;
     }
-
+    system("PAUSE");
 }
