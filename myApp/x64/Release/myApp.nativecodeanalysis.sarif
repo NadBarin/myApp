@@ -1,0 +1,188 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "Переменная \"sql::Variant::variant\" не инициализирована. Всегда инициализируйте переменную-член (type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/variant.h"
+                },
+                "region": {
+                  "startLine": 298,
+                  "startColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "sql::Variant::{ctor}",
+                  "decoratedName": "??0Variant@sql@@QEAA@AEBV01@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "sql::Variant::variant"
+          }
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.37.32822.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Program Files/MySQL/Connector C++ 8.0/include/jdbc/cppconn/variant.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "662d19d13b512b46d6cbcae8607894d7cee2283085e89ac26d67b54895b996a7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/6547j765j98h/source/repos/myapp/myapp/myapp.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "90634c40f5be485e0661e022310db32c46f314efa2034c64409589b44a12358e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/mysql_connection.h"
+          },
+          "hashes": {
+            "sha-256": "1151db54ad0e8cbbdc5ae3bbcf13c92eae94975f67352add14a14beadb0f181f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/connection.h"
+          },
+          "hashes": {
+            "sha-256": "1ade66e28c218ed9f5fbf1f281d00c9e1624ed0f301e6b06355b920493ca86df"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/build_config.h"
+          },
+          "hashes": {
+            "sha-256": "bd849b8d98d54aca70328d5d68e25420ffdbea183ad64b7e31f5abcbcc299f54"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/warning.h"
+          },
+          "hashes": {
+            "sha-256": "dab02f93c236b8e90ab5cfe84b6114014ce213607ca9ca9b456f20956b2f2749"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/sqlstring.h"
+          },
+          "hashes": {
+            "sha-256": "5bd79befc1696be15f2006294accd6fa7187161e235eb3e2388c4265ac608c40"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/exception.h"
+          },
+          "hashes": {
+            "sha-256": "da2552c8654250f7f26ac4dd31aceda06f43f7ddd1b9ee79ed023fe403258112"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/driver.h"
+          },
+          "hashes": {
+            "sha-256": "1eda13c9922ac902955dda10a37b14316f6b917fd60f866b08ad5493037de5e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/callback.h"
+          },
+          "hashes": {
+            "sha-256": "92f47535c9944a7777065f992d57d6cfed5e65124acc305ca0c2c6cfa9d8387d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/prepared_statement.h"
+          },
+          "hashes": {
+            "sha-256": "e3106e782c3bd8f626a0ba0a432efec513f571b14d05efc4a5868db6c2d689e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/statement.h"
+          },
+          "hashes": {
+            "sha-256": "1cd4eea4707d8171e275a5c86417b6f95d92a7b58d32038e32a8449611536d4a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/config.h"
+          },
+          "hashes": {
+            "sha-256": "715f243dc7df0611d3db57c6d2d5895c2c125838e3254690e62236ecace37471"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/resultset.h"
+          },
+          "hashes": {
+            "sha-256": "f7882298cb90c6fdcf0b0049f469652742010516ba7361b28629d9ffc1106dbd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/resultset_metadata.h"
+          },
+          "hashes": {
+            "sha-256": "9627cd3dd381c63760eb3a2ebcf40d88ff3c93f93a5b3696c2e2568a895e7481"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/program files/mysql/connector c++ 8.0/include/jdbc/cppconn/datatype.h"
+          },
+          "hashes": {
+            "sha-256": "4e640ed69757a326db60a20d411b23220b8a8edc16d0b0100197249daa74d641"
+          }
+        }
+      ]
+    }
+  ]
+}
